@@ -10,6 +10,8 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     z-index: 2;
 }
@@ -17,20 +19,22 @@ body {
 .header_name {
     width: 100vw;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #099d8d; 
     opacity: 0.95;  
-    text-align: center;
     color: white;
 }
 
 .header_navbar {
     width: 100vw;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     background-color: #14d9c4;
     opacity: 0.9;  
     color: white;
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
 } 
 
 a {
@@ -59,7 +63,7 @@ a {
     z-index: 1;
     transform: scale(0.9);
     margin: 0 auto;
-    margin-top: -5%;
+    margin-top: -10%;
     background-color: white; 
     font-size: 24px;
 }
