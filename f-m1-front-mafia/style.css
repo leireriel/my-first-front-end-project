@@ -1,0 +1,318 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.header_name {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #099d8d; 
+    opacity: 0.95;  
+    color: white;
+}
+
+.header_navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #14d9c4;
+    opacity: 0.9;  
+    color: white;
+    padding: 15px 0px 15px 0px;
+} 
+
+a {
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* MAIN: HERO */
+
+/* imagen */
+
+.main {
+    margin: 0 auto;
+}
+
+.header_img > img {
+    width: 100%;
+}
+
+/* Claim */
+
+.header_claim { /* ERROR EN CENTRADO CLAIN */
+    padding: 30px 10px 30px 10px;
+    position: relative;
+    z-index: 1;
+    transform: scale(0.9);
+    margin: 0 auto;
+    margin-top: -10%;
+    background-color: white; 
+    font-size: 24px;
+}
+
+/* MAIN: EQUIPO */
+
+/* Equipo */ 
+
+aside {
+    background-color: rgba(184, 184, 185, 0.2);
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: -20px;
+}
+h2, h3 {
+    font-family: 'Rubik', sans-serif;
+}
+.title_equipo {
+    color: #14d9c4;
+    text-transform: uppercase;
+}
+.fyd_title {
+    color: #099d8d;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: #54585a;
+}
+.equipo {
+    text-align: center;
+    padding: 30px 15px;
+}
+.triangulo {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto; 
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white;
+}
+
+/* QUIENES SOMOS */
+
+quienes {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+ }
+ 
+ .photo {
+    border-radius: 4px;
+    width: 100%;
+    border: solid rgba(0, 0, 0, 0.08) 5px;
+ }
+ 
+ .quienes_persona{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+ 
+ }
+ 
+ .quienes_description{
+    color: #54585a;
+    padding: 30px 15px;
+ }
+ 
+ .quienes_foto {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+ }
+ 
+ .quienes_redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #099d8d;
+ }
+ 
+ .quienes_redes p{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+ }
+ 
+ .quienes_redes1{
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    width: 124px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 0 98px;
+    flex-grow: 7;
+ }
+ 
+ .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
+    color: #099d8d;
+    font-size: 20px;
+ }
+ 
+ .quienes_somos {
+    color: #099d8d;
+    margin-top: 17%;
+ }
+
+ .quienes_redes1 li:not(:first-child)::before {
+   content:"・";
+   color: #099d8d;
+   display: inline-block;
+   vertical-align: middle;
+   margin-top: -4px;
+ }
+
+/* FOOTER */
+
+.footer {
+    margin: 0 auto;
+}
+
+.footer_reg {
+    padding-top: 30px;
+    border-top: 1px solid #b8b8b9;
+}
+
+.footer_reg p {color: #b8b8b9;}
+
+.footer_navbar {
+    padding-top: 30px;
+    color: grey;
+}
+
+.footer_logo {
+    width: 200px;
+    margin: 0 auto;
+    margin: 10% 0 8% 0;
+}
+
+@media (min-width: 320px) {
+    .nameTeam {
+        display: none;
+    }
+
+    .header_claim {
+        margin-top: -20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header_claim {
+        margin-top: -5%;
+    }
+
+    .quienes_persona {
+        display: flex;
+    }
+
+    aside {
+        display: flex;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    .footer_navbar {
+        text-align: right;
+        line-height: 2.15;
+    }
+    .footer_logo {
+        position: absolute;
+        align-self: flex-start;
+        width: 150px;
+    }
+    .quienes_foto {
+        width: 205px;
+        height: 205px;
+        display: flex;
+    }
+    
+    .quienes_description {
+        width: 443px;
+        font-size: 16px;
+    }
+    .quienes_description p {
+        text-align: left;
+        flex-grow: 1;
+    }
+    .quienes_name {
+        font-size: 20px;
+        display: flex;
+        width: 30%;
+        text-align: left;
+        flex-grow: 1;
+    }
+    */
+    .quienes_texto {
+        display: flex;
+        width: 518px;
+        height: 44px;
+    }
+    .quienes-redes {
+        flex-grow: 1;
+    .header_name {
+        display: none;
+    }
+
+    .header {
+        
+    }
+
+    .header_navbar {
+        background-color: #099d8d;
+        
+    }
+
+    .header_hero {
+    }
+
+    .header_claim {
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header_name {
+        display: none;
+    }
+
+    .header_claim {
+        opacity: 0.8;
+    }
+    .equipo {
+        padding: 30px 300px;
+    }
+    .aside {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 140px;
+        text-align: center;
+    }
+}
