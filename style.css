@@ -209,3 +209,19 @@ quienes {
     margin: 0 auto;
     margin: 10% 0 8% 0;
 }
+
+@media (min-width: 320px) {
+    .header_claim {
+        margin-top: -20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header_claim {
+        margin-top: -5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}
