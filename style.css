@@ -111,11 +111,12 @@ p {
 
 /* QUIENES SOMOS */
 
-.quienes_name {
+quienes {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 20px;
  }
  
  .photo {
@@ -176,10 +177,7 @@ p {
  .quienes_somos {
     color: #099d8d;
  }
- 
- .quienes_name{
-    font-size: 20px;
- }
+
  .quienes_redes1 li:not(:first-child)::before {
    content:"・";
    color: #099d8d;
@@ -211,16 +209,25 @@ p {
 }
 
 @media (min-width: 320px) {
+    .nameTeam {
+        display: none;
+    }
+
     .header_claim {
         margin-top: -20%;
     }
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
     .header_claim {
         margin-top: -5%;
     }
-<<<<<<< HEAD
+
+    .quienes_persona {
+        display: flex;
+    }
+
     aside {
         display: flex;
     }
@@ -237,30 +244,64 @@ p {
         position: absolute;
         align-self: flex-start;
         width: 150px;
-=======
+    }
     .quienes_foto {
         width: 205px;
         height: 205px;
-        flex-grow: 1;
+        display: flex;
     }
+    
     .quienes_description {
         width: 443px;
         font-size: 16px;
     }
     .quienes_description p {
         text-align: left;
+        flex-grow: 1;
     }
     .quienes_name {
         font-size: 20px;
         display: flex;
+        width: 30%;
+        text-align: left;
+        flex-grow: 1;
     }
+    */
     .quienes_texto {
         display: flex;
+        width: 518px;
+        height: 44px;
+    }
+    .quienes-redes {
         flex-grow: 1;
->>>>>>> f360556990a1c9927579e7b00039e4ff509c90a6
+=======
+    .header_name {
+        display: none;
+    }
+
+    .header {
+        
+    }
+
+    .header_navbar {
+        background-color: #099d8d;
+        
+    }
+
+    .header_hero {
+    }
+
+    .header_claim {
+        opacity: 0.8;
+>>>>>>> 48a2fdfefb2ec4aed489b35920fc0a1145722a8f
     }
 }
 
 @media (min-width: 1200px) {
-    
+    .header_name {
+        display: none;
+    }
+
+    .header_claim {
+        opacity: 0.8;
 }
