@@ -111,7 +111,7 @@ p {
 
 /* QUIENES SOMOS */
 
-quienes {
+.quienes_name {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     margin: 0;
@@ -220,6 +220,7 @@ quienes {
     .header_claim {
         margin-top: -5%;
     }
+<<<<<<< HEAD
     aside {
         display: flex;
     }
@@ -236,6 +237,27 @@ quienes {
         position: absolute;
         align-self: flex-start;
         width: 150px;
+=======
+    .quienes_foto {
+        width: 205px;
+        height: 205px;
+        flex-grow: 1;
+    }
+    .quienes_description {
+        width: 443px;
+        font-size: 16px;
+    }
+    .quienes_description p {
+        text-align: left;
+    }
+    .quienes_name {
+        font-size: 20px;
+        display: flex;
+    }
+    .quienes_texto {
+        display: flex;
+        flex-grow: 1;
+>>>>>>> f360556990a1c9927579e7b00039e4ff509c90a6
     }
 }
 
