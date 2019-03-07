@@ -304,4 +304,14 @@ quienes {
 
     .header_claim {
         opacity: 0.8;
+    }
+    .equipo {
+        padding: 30px 300px;
+    }
+    .aside {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 140px;
+        text-align: center;
+    }
 }
