@@ -111,7 +111,7 @@ p {
 
 /* QUIENES SOMOS */
 
-.quienes_name {
+quienes {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     margin: 0;
@@ -209,12 +209,17 @@ p {
 }
 
 @media (min-width: 320px) {
+    .nameTeam {
+        display: none;
+    }
+
     .header_claim {
         margin-top: -20%;
     }
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
     .header_claim {
         margin-top: -5%;
     }
@@ -269,9 +274,34 @@ p {
     }
     .quienes-redes {
         flex-grow: 1;
+=======
+    .header_name {
+        display: none;
+    }
+
+    .header {
+        
+    }
+
+    .header_navbar {
+        background-color: #099d8d;
+        
+    }
+
+    .header_hero {
+    }
+
+    .header_claim {
+        opacity: 0.8;
+>>>>>>> 48a2fdfefb2ec4aed489b35920fc0a1145722a8f
     }
 }
 
 @media (min-width: 1200px) {
-    
+    .header_name {
+        display: none;
+    }
+
+    .header_claim {
+        opacity: 0.8;
 }
