@@ -218,8 +218,27 @@ p {
     .header_claim {
         margin-top: -5%;
     }
+
     .quienes_persona {
         display: flex;
+    }
+
+    aside {
+        display: flex;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    .footer_navbar {
+        text-align: right;
+        line-height: 2.15;
+    }
+    .footer_logo {
+        position: absolute;
+        align-self: flex-start;
+        width: 150px;
     }
     .quienes_foto {
         width: 205px;
