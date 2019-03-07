@@ -193,11 +193,11 @@ quienes {
 
 .footer {
     margin: 0 auto;
+    border-top: 1px solid #b8b8b9;
 }
 
 .footer_reg {
     padding-top: 30px;
-    border-top: 1px solid #b8b8b9;
 }
 
 .footer_reg p {color: #b8b8b9;}
@@ -213,7 +213,9 @@ quienes {
     margin: 10% 0 8% 0;
 }
 
-@media (min-width: 320px) {
+/******INICIO RESPONSIVE******/
+
+@media (min-width: 320px) and (max-width: 767px){
     .nameTeam {
         display: none;
     }
@@ -223,9 +225,14 @@ quienes {
     }
 }
 
-@media (min-width: 768px) {
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px){
     .header_claim {
         margin-top: -5%;
+    }
+
+    .nameTeam {
+        display: none;
     }
 
     .quienes_persona {
@@ -277,13 +284,10 @@ quienes {
         height: 44px;
     }
     .quienes-redes {
-        flex-grow: 1;
+        flex-grow: 1;}
+
     .header_name {
         display: none;
-    }
-
-    .header {
-        
     }
 
     .header_navbar {
@@ -291,14 +295,15 @@ quienes {
         
     }
 
-    .header_hero {
-    }
+    .header_img > img {margin-top: 0;}
 
     .header_claim {
         opacity: 0.8;
     }
 }
 
+/*Desktop*/
+/*
 @media (min-width: 1200px) {
     .header_name {
         display: none;
@@ -316,4 +321,4 @@ quienes {
         padding: 30px 140px;
         text-align: center;
     }
-}
+}*/
