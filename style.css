@@ -53,6 +53,7 @@ a {
 
 .header_img > img {
     width: 100%;
+    margin-top: 60px;
 }
 
 /* Claim */
@@ -128,12 +129,13 @@ quienes {
  .quienes_persona{
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 5%;
  
  }
  
  .quienes_description{
     color: #54585a;
+    padding: 30px 15px;
  }
  
  .quienes_foto {
@@ -171,11 +173,12 @@ quienes {
  
  .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
     color: #099d8d;
-    font-size: 18px;
+    font-size: 20px;
  }
  
  .quienes_somos {
     color: #099d8d;
+    margin-top: 17%;
  }
 
  .quienes_redes1 li:not(:first-child)::before {
@@ -183,7 +186,7 @@ quienes {
    color: #099d8d;
    display: inline-block;
    vertical-align: middle;
-   margin-top: 2px;
+   margin-top: -4px;
  }
 
 /* FOOTER */
@@ -194,8 +197,10 @@ quienes {
 
 .footer_reg {
     padding-top: 30px;
-    color: lightslategray;
+    border-top: 1px solid #b8b8b9;
 }
+
+.footer_reg p {color: #b8b8b9;}
 
 .footer_navbar {
     padding-top: 30px;
@@ -219,7 +224,6 @@ quienes {
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
     .header_claim {
         margin-top: -5%;
     }
@@ -274,7 +278,6 @@ quienes {
     }
     .quienes-redes {
         flex-grow: 1;
-=======
     .header_name {
         display: none;
     }
@@ -293,7 +296,6 @@ quienes {
 
     .header_claim {
         opacity: 0.8;
->>>>>>> 48a2fdfefb2ec4aed489b35920fc0a1145722a8f
     }
 }
 
