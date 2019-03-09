@@ -45,6 +45,10 @@ a {
 
 /* MAIN: HERO */
 
+.header_hero {
+    position: relative;
+}
+
 /* imagen */
 
 .main {
@@ -59,7 +63,7 @@ a {
 
 .header_claim { 
     padding: 30px 10px 30px 10px;
-    position: relative;
+    position: absolute;
     z-index: 1;
     transform: scale(0.9);
     margin: 0 auto;
@@ -211,41 +215,51 @@ quienes {
     margin: 10% 0 8% 0;
 }
 
-.nameTeam {display: none;}
-
 /****** INICIO RESPONSIVE ******/
 
 @media (min-width: 320px) and (max-width: 767px){
+
     .nameTeam {
         display: none;
     }
 
     .header_claim {
-        margin-top: -20%;
+        margin-top: -10%;
     }
 }
 
 /* Tablet */
 
 @media (min-width: 768px) and (max-width: 1199px){
-    .nameTeam {
-        display: none;
-    }
-    
+
     .header_name {
         display: none;
     }
 
     .header_navbar {
         background-color: #099d8d;
-        
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 40%; 
     }
 
-    .header_img > img {margin-top: 0;}
+    .nameTeam {
+        font-weight: bold;
+        align-self: flex-start;
+    }
+
+    .h_navItem {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .header_hero {
+        display: flex;
+        align-items: flex-end;
+    }
 
     .header_claim {
         opacity: 0.8;
-        margin-top: %;
     }
 
     .quienes_persona {
@@ -255,20 +269,7 @@ quienes {
     aside {
         display: flex;
     }
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px;
-    }
-    .footer_navbar {
-        text-align: right;
-        line-height: 2.15;
-    }
-    .footer_logo {
-        position: absolute;
-        align-self: flex-start;
-        width: 150px;
-    }
+ 
     .quienes_foto {
         width: 205px;
         height: 205px;
@@ -299,15 +300,52 @@ quienes {
     .quienes-redes {
         flex-grow: 1;
     }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    .footer_navbar {
+        text-align: right;
+        line-height: 2.15;
+    }
+    .footer_logo {
+        position: absolute;
+        align-self: flex-start;
+        width: 150px;
+    }
 }
 
 /*Desktop*/
 
 @media (min-width: 1200px) {
+
     .header_name {
         display: none;
     }
 
+    .header_navbar {
+        background-color: #099d8d;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 40%; 
+    }
+
+    .nameTeam {
+        font-weight: bold;
+        align-self: flex-start;
+    }
+
+    .h_navItem {
+        padding-left: 1%;
+    }
+
+    .header_hero {
+        display: flex;
+        align-items: flex-end;
+    }
+    
     .header_claim {
         opacity: 0.8;
     }
