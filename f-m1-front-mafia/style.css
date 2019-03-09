@@ -53,18 +53,16 @@ a {
 
 .header_img > img {
     width: 100%;
-    margin-top: 60px;
 }
 
 /* Claim */
 
-.header_claim { /* ERROR EN CENTRADO CLAIN */
+.header_claim { 
     padding: 30px 10px 30px 10px;
     position: relative;
     z-index: 1;
     transform: scale(0.9);
     margin: 0 auto;
-    margin-top: -10%;
     background-color: white; 
     font-size: 24px;
 }
@@ -215,7 +213,7 @@ quienes {
 
 .nameTeam {display: none;}
 
-/******INICIO RESPONSIVE******/
+/****** INICIO RESPONSIVE ******/
 
 @media (min-width: 320px) and (max-width: 767px){
     .nameTeam {
@@ -227,14 +225,27 @@ quienes {
     }
 }
 
-/*Tablet*/
-@media (min-width: 768px) and (max-width: 1024px){
-    .header_claim {
-        margin-top: -5%;
-    }
+/* Tablet */
 
+@media (min-width: 768px) and (max-width: 1199px){
     .nameTeam {
         display: none;
+    }
+    
+    .header_name {
+        display: none;
+    }
+
+    .header_navbar {
+        background-color: #099d8d;
+        
+    }
+
+    .header_img > img {margin-top: 0;}
+
+    .header_claim {
+        opacity: 0.8;
+        margin-top: %;
     }
 
     .quienes_persona {
@@ -286,21 +297,7 @@ quienes {
         height: 44px;
     }
     .quienes-redes {
-        flex-grow: 1;}
-
-    .header_name {
-        display: none;
-    }
-
-    .header_navbar {
-        background-color: #099d8d;
-        
-    }
-
-    .header_img > img {margin-top: 0;}
-
-    .header_claim {
-        opacity: 0.8;
+        flex-grow: 1;
     }
 }
 
