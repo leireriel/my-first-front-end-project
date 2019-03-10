@@ -114,82 +114,81 @@ p {
 
 /* QUIENES SOMOS */
 
-quienes {
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+ .quienes_somos {
+    color: #14d9c4;
  }
- 
- .photo {
-    border-radius: 4px;
-    width: 100%;
-    border: solid rgba(0, 0, 0, 0.08) 5px;
- }
- 
+
  .quienes_persona{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
- 
- }
- 
- .quienes_description{
-    color: #54585a;
-    padding: 30px 15px;
+    padding: 25px;
+    align-content: space-between;
  }
  
  .quienes_foto {
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
- }
- 
- .quienes_redes{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+ }
+
+ .photo {
+    border-radius: 4px;
+    width: 60%;
+    border: solid rgba(0, 0, 0, 0.08) 5px;
+    max-width: 220px;
+ }
+
+ .quienes_texto {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    color: #54585a
+ }
+ 
+ .quienes_namediv, .quienes_description, .quienes_redes {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     color: #099d8d;
  }
- 
- .quienes_redes p{
-    display: block;
-    text-align: center;
-    font-size: 16px;
+
+ .quienes_description {
+    margin: 20px 0;
+ }
+
+ .quienes_redes {
+    margin: 0 0 50px 0;
+ }
+
+ .quienes_name, .quienes_description_text {
+    display: inline;
+    margin: 0;
  }
  
- .quienes_redes1{
+ .quienes_redes_list {
     list-style: none;
-    display: flex;
-    flex-grow: 1;
-    height: 40px;
-    width: 124px;
-    justify-content: center;
-    align-items: stretch;
+    margin: 0;
     padding: 0;
-    font-size: 1.5rem;
-    margin: 0 98px;
-    flex-grow: 7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
  }
- 
+
+ .quienes_redes_item:not(:first-child)::before {
+  content: "·";
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 0 11px;
+}
+
  .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
     color: #099d8d;
     font-size: 20px;
  }
- 
- .quienes_somos {
-    color: #099d8d;
-    margin-top: 17%;
- }
 
- .quienes_redes1 li:not(:first-child)::before {
-   content:"・";
-   color: #099d8d;
-   display: inline-block;
-   vertical-align: middle;
-   margin-top: -4px;
- }
 
 /* FOOTER */
 
@@ -230,7 +229,7 @@ quienes {
 
 /* Tablet */
 
-@media (min-width: 768px) and (max-width: 1199px){
+@media all and (min-width: 768px) {
 
     .header_name {
         display: none;
@@ -262,43 +261,45 @@ quienes {
         opacity: 0.8;
     }
 
-    .quienes_persona {
-        display: flex;
-    }
-
     aside {
         display: flex;
     }
- 
+
+    .quienes_persona {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 25px 50px;
+    }
+
+    .quienes_persona:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
     .quienes_foto {
-        width: 205px;
-        height: 205px;
-        display: flex;
+        margin: 0;
+    }
+
+    .photo {
+        box-sizing: border-box;
+        width: 220px;
+    }
+
+    .quienes_texto {
+        text-align: right;
+        margin: 10px 60px 0 0;
+    }
+
+    .quienes_texto_odd {
+        text-align: left;
+        margin: 10px 0 0 60px;
     }
     
-    .quienes_description {
-        width: 443px;
-        font-size: 16px;
+    .quienes_redes_list {
+        justify-content: flex-end;
     }
-    .quienes_description p {
-        text-align: left;
-        flex-grow: 1;
-    }
-    .quienes_name {
-        font-size: 20px;
-        display: flex;
-        width: 30%;
-        text-align: left;
-        flex-grow: 1;
-    }
-    */
-    .quienes_texto {
-        display: flex;
-        width: 518px;
-        height: 44px;
-    }
-    .quienes-redes {
-        flex-grow: 1;
+
+    .quienes_redes_list_odd {
+        justify-content: flex-start;
     }
 
     .footer {
@@ -357,5 +358,15 @@ quienes {
         justify-content: space-between;
         padding: 30px 140px;
         text-align: center;
+    }
+
+    .quienes_persona {
+        padding: 25px 140px;
+    }
+    .quienes_texto {
+        margin: 10px 60px 0 140px;
+    }
+    .quienes_texto_odd {
+        margin: 10px 140px 0 60px;
     }
 }
