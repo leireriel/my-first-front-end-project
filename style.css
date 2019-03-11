@@ -84,11 +84,11 @@ aside {
 h2, h3 {
     font-family: 'Rubik', sans-serif;
 }
-.title_equipo {
+.main_team_title {
     color: #14d9c4;
     text-transform: uppercase;
 }
-.fyd_title {
+.main_team_sw_title {
     color: #099d8d;
 }
 p {
@@ -97,11 +97,11 @@ p {
     text-align: center;
     color: #54585a;
 }
-.equipo {
+.main_team {
     text-align: center;
     padding: 30px 15px;
 }
-.triangulo {
+.main_team_triangle {
     position: relative;
     z-index: 1;
     margin: 0 auto; 
