@@ -265,40 +265,40 @@ p {
         display: flex;
     }
 
-    .quienes_persona {
+    .main_who_persona {
         flex-direction: row;
         align-items: flex-start;
         padding: 25px 50px;
     }
 
-    .quienes_persona:nth-child(odd) {
+    .main_who_persona:nth-child(odd) {
         flex-direction: row-reverse;
       }
 
-    .quienes_foto {
+    .main_who_photo_container {
         margin: 0;
     }
 
-    .photo {
+    .main_who_photo {
         box-sizing: border-box;
         width: 220px;
     }
 
-    .quienes_texto {
+    .main_who_text {
         text-align: right;
         margin: 10px 60px 0 0;
     }
 
-    .quienes_texto_odd {
+    .main_who_text_odd {
         text-align: left;
         margin: 10px 0 0 60px;
     }
     
-    .quienes_redes_list {
+    .main_who_social_list {
         justify-content: flex-end;
     }
 
-    .quienes_redes_list_odd {
+    .main_who_social_list_odd {
         justify-content: flex-start;
     }
 
