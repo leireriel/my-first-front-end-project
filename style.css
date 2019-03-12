@@ -114,32 +114,32 @@ p {
 
 /* QUIENES SOMOS */
 
- .quienes_somos {
+ .main_who {
     color: #14d9c4;
  }
 
- .quienes_persona{
+ .main_who_person {
     display: flex;
     flex-direction: column;
     padding: 25px;
     align-content: space-between;
  }
  
- .quienes_foto {
+ .main_who_photo_container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
  }
 
- .photo {
+ .main_who_photo {
     border-radius: 4px;
     width: 60%;
     border: solid rgba(0, 0, 0, 0.08) 5px;
     max-width: 220px;
  }
 
- .quienes_texto {
+ .main_who_text {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -148,27 +148,27 @@ p {
     color: #54585a
  }
  
- .quienes_namediv, .quienes_description, .quienes_redes {
+ .main_who_name_container, .main_who_description, .main_who_social {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     color: #099d8d;
  }
 
- .quienes_description {
+ .main_who_description {
     margin: 20px 0;
  }
 
- .quienes_redes {
+ .main_who_social {
     margin: 0 0 50px 0;
  }
 
- .quienes_name, .quienes_description_text {
+ .main_who_name, .main_who_description_text {
     display: inline;
     margin: 0;
  }
  
- .quienes_redes_list {
+ .main_who_social_list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -177,7 +177,7 @@ p {
     justify-content: center;
  }
 
- .quienes_redes_item:not(:first-child)::before {
+ .main_who_social_item:not(:first-child)::before {
   content: "·";
   vertical-align: middle;
   font-size: 20px;
