@@ -274,6 +274,11 @@ p {
         display: flex;
     }
 
+    .main_team_skills {
+        width: 50%;
+        padding: 20px;
+    }
+
     .main_who_persona {
         flex-direction: row;
         align-items: flex-start;
@@ -360,14 +365,16 @@ p {
         opacity: 0.8;
     }
     
-    .equipo {
-        padding: 30px 300px;
-    }
     .aside {
         display: flex;
         justify-content: space-between;
         padding: 30px 140px;
         text-align: center;
+    }
+
+    .main_team_skills {
+        width: 50%;
+        padding: 30px;
     }
 
     .quienes_persona {
