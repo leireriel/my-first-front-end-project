@@ -29,13 +29,20 @@ body {
 
 .header_navbar {
     width: 100vw;
-    display: flex;
-    justify-content: space-evenly; 
     background-color: #14d9c4;
     opacity: 0.9;  
     color: white;
-    padding: 15px 0px 15px 0px;
 } 
+
+.header_navbar-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header_navbar_item {
+    list-style: none;
+}
 
 a {
     color: inherit;
@@ -45,7 +52,7 @@ a {
 
 /* MAIN: HERO */
 
-.header_hero {
+.main_hero {
     position: relative;
 }
 
@@ -55,13 +62,13 @@ a {
     margin: 0 auto;
 }
 
-.header_img > img {
+.main_hero_img > img {
     width: 100%;
 }
 
 /* Claim */
 
-.header_claim { 
+.main_hero_claim { 
     padding: 30px 10px 30px 10px;
     position: absolute;
     z-index: 1;
@@ -70,6 +77,7 @@ a {
     background-color: white; 
     font-size: 24px;
 }
+
 
 /* MAIN: EQUIPO */
 
@@ -218,11 +226,11 @@ p {
 
 @media (min-width: 320px) and (max-width: 767px){
 
-    .nameTeam {
+    .header_navbar_name {
         display: none;
     }
 
-    .header_claim {
+    .main_hero_claim {
         margin-top: -10%;
     }
 }
@@ -238,26 +246,27 @@ p {
     .header_navbar {
         background-color: #099d8d;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
         padding-right: 40%; 
     }
 
-    .nameTeam {
+    .header_navbar_name {
         font-weight: bold;
-        align-self: flex-start;
+        justify-content: flex-start;
     }
 
-    .h_navItem {
+    .header_navbar_item {
         padding-left: 1%;
         padding-right: 1%;
     }
 
-    .header_hero {
+    .main_hero {
         display: flex;
         align-items: flex-end;
     }
 
-    .header_claim {
+    .main_hero_claim {
         opacity: 0.8;
     }
 
@@ -333,23 +342,24 @@ p {
         padding-right: 40%; 
     }
 
-    .nameTeam {
+    .header_navbar_name {
         font-weight: bold;
         align-self: flex-start;
     }
 
-    .h_navItem {
+    .header_navbar_item {
         padding-left: 1%;
     }
 
-    .header_hero {
+    .main_hero {
         display: flex;
         align-items: flex-end;
     }
     
-    .header_claim {
+    .main_hero_claim {
         opacity: 0.8;
     }
+    
     .equipo {
         padding: 30px 300px;
     }
