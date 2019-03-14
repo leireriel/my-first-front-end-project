@@ -4,231 +4,23 @@ body {
     margin: 0;
 }
 
-/* HEADER */
-
-.header {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    z-index: 2;
-}
-
-.header_name {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #099d8d; 
-    opacity: 0.95;  
-    color: white;
-}
-
-.header_navbar {
-    width: 100vw;
-    background-color: #14d9c4;
-    opacity: 0.9;  
-    color: white;
-} 
-
-.header_navbar-list {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.header_navbar_item {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-/* MAIN: HERO */
-
-.main_hero {
-    position: relative;
-}
-
-/* imagen */
-
-.main {
-    margin: 0 auto;
-}
-
-.main_hero_img > img {
-    width: 100%;
-}
-
-/* Claim */
-
-.main_hero_claim { 
-    padding: 30px 10px 30px 10px;
-    position: absolute;
-    z-index: 1;
-    transform: scale(0.9);
-    margin: 0 auto;
-    background-color: white; 
-    font-size: 24px;
-}
 
 
-/* MAIN: EQUIPO */
-
-/* Equipo */ 
-
-aside {
-    background-color: rgba(184, 184, 185, 0.2);
-    text-align: center;
-    padding: 30px 15px;
-    margin-top: -20px;
-}
-h2, h3 {
-    font-family: 'Rubik', sans-serif;
-}
-.main_team_title {
-    color: #14d9c4;
-    text-transform: uppercase;
-}
-.main_team_sw_title {
-    color: #099d8d;
-}
-p {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-    text-align: center;
-    color: #54585a;
-}
-.main_team {
-    text-align: center;
-    padding: 30px 15px;
-}
-.main_team_triangle {
-    position: relative;
-    z-index: 1;
-    margin: 0 auto; 
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 30px solid white;
-}
-
-/* QUIENES SOMOS */
-/*comentario*/
- .main_who {
-    color: #14d9c4;
- }
-
- .main_who_person {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    align-content: space-between;
- }
- 
- .main_who_photo_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
- }
-
- .main_who_photo {
-    border-radius: 4px;
-    width: 60%;
-    border: solid rgba(0, 0, 0, 0.08) 5px;
-    max-width: 220px;
- }
-
- .main_who_text {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
-    color: #54585a
- }
- 
- .main_who_name_container, .main_who_description, .main_who_social {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    color: #099d8d;
- }
-
- .main_who_description {
-    margin: 20px 0;
- }
-
- .main_who_social {
-    margin: 0 0 50px 0;
- }
-
- .main_who_name, .main_who_description_text {
-    display: inline;
-    margin: 0;
- }
- 
- .main_who_social_list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }
-
- .main_who_social_item:not(:first-child)::before {
-  content: "·";
-  vertical-align: middle;
-  font-size: 20px;
-  margin: 0 11px;
-}
-
- .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
-    color: #099d8d;
-    font-size: 20px;
- }
 
 
-/* FOOTER */
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/team';
+@import 'layout/who';
+@import 'layout/footer';
 
-.footer {
-    margin: 0 auto;
-    border-top: 1px solid #b8b8b9;
-}
 
-.footer_reg {
-    padding-top: 30px;
-}
 
-.footer_reg p {color: #b8b8b9;}
-
-.footer_navbar {
-    padding-top: 30px;
-    color: grey;
-}
-
-.footer_logo {
-    width: 200px;
-    margin: 0 auto;
-    margin: 10% 0 8% 0;
-}
 
 /****** INICIO RESPONSIVE ******/
 
 @media (min-width: 320px) and (max-width: 767px){
 
-    .header_navbar_name {
-        display: none;
-    }
 
     .main_hero_claim {
         margin-top: -10%;
@@ -239,28 +31,7 @@ p {
 
 @media all and (min-width: 768px) {
 
-    .header_name {
-        display: none;
-    }
-
-    .header_navbar {
-        background-color: #099d8d;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 40%; 
-    }
-
-    .header_navbar_name {
-        font-weight: bold;
-        justify-content: flex-start;
-    }
-
-    .header_navbar_item {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-
+   
     .main_hero {
         display: flex;
         align-items: flex-end;
@@ -315,46 +86,12 @@ p {
     .main_who_social_list_odd {
         justify-content: flex-start;
     }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px;
-    }
-    .footer_navbar {
-        text-align: right;
-        line-height: 2.15;
-    }
-    .footer_logo {
-        position: absolute;
-        align-self: flex-start;
-        width: 150px;
-    }
 }
 
 /*Desktop*/
 
 @media (min-width: 1200px) {
 
-    .header_name {
-        display: none;
-    }
-
-    .header_navbar {
-        background-color: #099d8d;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 40%; 
-    }
-
-    .header_navbar_name {
-        font-weight: bold;
-        align-self: flex-start;
-    }
-
-    .header_navbar_item {
-        padding-left: 1%;
-    }
 
     .main_hero {
         display: flex;

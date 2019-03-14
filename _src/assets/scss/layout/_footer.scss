@@ -1,0 +1,31 @@
+/* FOOTER */
+
+.footer {
+    margin: 0 auto;
+    border-top: 1px solid #b8b8b9;
+    @media all and (min-width: 768px) {display: flex;
+        justify-content: space-between;
+        margin: 30px;}
+}
+
+.footer_reg {
+    padding-top: 30px;
+}
+
+.footer_reg p {color: #b8b8b9;}
+
+.footer_navbar {
+    padding-top: 30px;
+    color: grey;
+    @media all and (min-width: 768px) {text-align: right;
+        line-height: 2.15;}
+}
+
+.footer_logo {
+    width: 200px;
+    margin: 0 auto;
+    margin: 10% 0 8% 0;
+    @media all and (min-width: 768px) { position: absolute;
+        align-self: flex-start;
+        width: 150px;}
+}

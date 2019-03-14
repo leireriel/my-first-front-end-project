@@ -1,0 +1,40 @@
+/* MAIN: EQUIPO */
+
+/* Equipo */ 
+
+aside {
+    background-color: rgba(184, 184, 185, 0.2);
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: -20px;
+}
+h2, h3 {
+    font-family: 'Rubik', sans-serif;
+}
+.main_team_title {
+    color: #14d9c4;
+    text-transform: uppercase;
+}
+.main_team_sw_title {
+    color: #099d8d;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: #54585a;
+}
+.main_team {
+    text-align: center;
+    padding: 30px 15px;
+}
+.main_team_triangle {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto; 
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white;
+}
