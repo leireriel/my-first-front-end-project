@@ -279,13 +279,13 @@ p {
         padding: 20px;
     }
 
-    .main_who_persona {
+    .main_who_person {
         flex-direction: row;
         align-items: flex-start;
         padding: 25px 50px;
     }
 
-    .main_who_persona:nth-child(odd) {
+    .main_who_person:nth-child(odd) {
         flex-direction: row-reverse;
       }
 
@@ -315,7 +315,6 @@ p {
     .main_who_social_list_odd {
         justify-content: flex-start;
     }
-
     .footer {
         display: flex;
         justify-content: space-between;
@@ -377,13 +376,13 @@ p {
         padding: 30px;
     }
 
-    .quienes_persona {
+    .main_who_person {
         padding: 25px 140px;
     }
-    .quienes_texto {
+    .main_who_text {
         margin: 10px 60px 0 140px;
     }
-    .quienes_texto_odd {
+    .main_who_text_odd {
         margin: 10px 140px 0 60px;
     }
 }
