@@ -10,8 +10,12 @@
     margin: 0 auto;
 }
 
-.main_hero_img > img {
+.main_hero_img {
     width: 100%;
+    height: 421px;
+    background-image: url('../../../assets/images/grupal_buena.jpg');
+    background-size: cover;
+    background-position: center 60px;
 }
 
 /* Claim */
