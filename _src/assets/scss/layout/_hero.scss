@@ -21,6 +21,7 @@
     background-image: url('../../../assets/images/grupal_buena.jpg');
     background-size: cover;
     background-position: center 60px;
+    position: relative;
 
     @media all and (min-width: 768px) {
         background-position: center -80px;
@@ -46,6 +47,7 @@
     }
     @media all and (min-width: 768px) {
         opacity: 0.8;
+        position: absolute;
     }
     @media (min-width: 1200px) {
         opacity: 0.8;
