@@ -31,12 +31,14 @@
     opacity: 0.9;  
     color: white;
 
-    @media all and (min-width: 768px) {background-color: #099d8d;
+    @media all and (min-width: 768px) {
+        background-color: #099d8d;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-right: 40%; }
-    @media (min-width: 1200px) {background-color: #099d8d;
+    @media (min-width: 1200px) {
+        background-color: #099d8d;
         display: flex;
         justify-content: flex-end;
         padding-right: 40%; }   
@@ -50,7 +52,9 @@
 
 .header_navbar_item {
     list-style: none;
-    @media all and (min-width: 768px) { padding-left: 1%;
+
+    @media all and (min-width: 768px) { 
+        padding-left: 1%;
         padding-right: 1%;}
     @media (min-width: 1200px) {padding-left: 1%;}
 }
@@ -62,11 +66,14 @@ a {
 }
 
 .header_navbar_name {
+
     @media (min-width: 320px) and (max-width: 767px){
         display: none;}
 
-    @media all and (min-width: 768px) {font-weight: bold;
+    @media all and (min-width: 768px) {
+        font-weight: bold;
         justify-content: flex-start;}
-    @media (min-width: 1200px) {font-weight: bold;
+    @media (min-width: 1200px) {
+        font-weight: bold;
         align-self: flex-start;}
 }

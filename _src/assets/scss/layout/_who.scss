@@ -1,5 +1,3 @@
-/* QUIENES SOMOS */
-/*comentario*/
 .main_who {
     color: #14d9c4;
  }
@@ -9,13 +7,32 @@
     flex-direction: column;
     padding: 25px;
     align-content: space-between;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 25px 50px;
+    }
+    @media (min-width: 1200px) {
+      padding: 25px 140px;
+   }
  }
+
+.main_who_person:nth-child(odd) {
+   @media all and (min-width: 768px) {
+   flex-direction: row-reverse;
+  }
+}
  
- .main_who_photo_container {
+.main_who_photo_container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+
+    @media all and (min-width: 768px) {
+      margin: 0;
+    }
  }
 
  .main_who_photo {
@@ -23,6 +40,11 @@
     width: 60%;
     border: solid rgba(0, 0, 0, 0.08) 5px;
     max-width: 220px;
+
+    @media all and (min-width: 768px) {
+      box-sizing: border-box;
+      width: 220px;
+      }
  }
 
  .main_who_text {
@@ -31,9 +53,27 @@
     flex-direction: column;
     text-align: center;
     font-size: 20px;
-    color: #54585a
+    color: #54585a;
+
+    @media all and (min-width: 768px) {
+      text-align: right;
+      margin: 10px 60px 0 0;
+   }
+   @media (min-width: 1200px) {
+      margin: 10px 60px 0 140px;
+    }
  }
  
+.main_who_text_odd {
+   @media all and (min-width: 768px) {
+      text-align: left;
+      margin: 10px 0 0 60px;
+   }
+   @media (min-width: 1200px) {
+      margin: 10px 140px 0 60px;
+  }
+}
+
  .main_who_name_container, .main_who_description, .main_who_social {
     width: 100%;
     height: 100%;
@@ -61,7 +101,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media all and (min-width: 768px) {
+      justify-content: flex-end;
+   }
  }
+
+ .main_who_social_list_odd {
+   @media all and (min-width: 768px) {
+      justify-content: flex-start;
+   }
+}
 
  .main_who_social_item:not(:first-child)::before {
   content: "·";
@@ -70,7 +120,8 @@
   margin: 0 11px;
 }
 
- .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
+.fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
     color: #099d8d;
     font-size: 20px;
  }
+

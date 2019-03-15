@@ -1,33 +1,56 @@
-/* MAIN: EQUIPO */
-
-/* Equipo */ 
-
 aside {
     background-color: rgba(184, 184, 185, 0.2);
     text-align: center;
     padding: 30px 15px;
     margin-top: -20px;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+    }
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 140px;
+        text-align: center;
+    }
 }
+
 h2, h3 {
     font-family: 'Rubik', sans-serif;
 }
+
 .main_team_title {
     color: #14d9c4;
     text-transform: uppercase;
 }
+
 .main_team_sw_title {
     color: #099d8d;
 }
+
+.main_team_skills {
+    @media all and (min-width: 768px) {
+        width: 50%;
+        padding: 20px;
+    }
+    @media (min-width: 1200px) {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     text-align: center;
     color: #54585a;
 }
+
 .main_team {
     text-align: center;
     padding: 30px 15px;
 }
+
 .main_team_triangle {
     position: relative;
     z-index: 1;
