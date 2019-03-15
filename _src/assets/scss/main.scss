@@ -4,16 +4,18 @@ body {
     margin: 0;
 }
 
+//Core
 
 
-
-
+//Layout
 @import 'layout/header';
 @import 'layout/hero';
 @import 'layout/team';
 @import 'layout/who';
 @import 'layout/footer';
 
+//Pages
+@import 'pages/cv_template';
 
 
 

@@ -1,6 +1,19 @@
 @import 'layout/header';
 
+.main_cv {
+    margin: 10%;
+}
+.header_cv {
+    text-align: center;
+}
+.photo_container img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    border: 15px solid lightgray;
+    display:flex;
 
+}
 
 
 @import 'layout/footer';
