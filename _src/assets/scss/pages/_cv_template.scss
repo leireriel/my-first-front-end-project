@@ -1,5 +1,30 @@
 @import 'layout/header';
 
+/*.main_cv {
+    margin: 10%;
+}*/
+.header_cv {
+    text-align: center;
+}
+.photo_container {
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .photo_main {
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 15px solid lightgray;
+}
+.name {
+    border-bottom: 2px solid lightgrey;
+}
+
+//provisional
 
 
 
