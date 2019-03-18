@@ -5,18 +5,37 @@
     height: 300px;
 }
 .container_contact {
-    margin: 10px;
+    margin: 0 10px;
 }
 .label {
     display: block;
     margin-top: 13px;
+    @media all and (min-width: 768px) {
+        margin-bottom: 7px;
+    }
 }
 .container_form {
     text-align: left;
     padding: 0 15px;
+    @media all and (min-width: 768px) {
+        width: 442px;
+        margin: 0 auto;
+    }
+    @media all and (min-width: 1200px) {
+        width: 601px;
+    }
 }
 .text_container {
-    margin-bottom: 50px;
+    padding-bottom: 58px;
+    @media all and (min-width: 768px) {
+        width: 442px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    @media all and (min-width: 1200px) {
+        width: 601px;
+        padding-top: 45px;
+    }
 }
 .input_form {
     width: 100%;
@@ -24,6 +43,18 @@
     padding-left: 15px;
     border: 1px solid #b8b8b9;
     box-sizing: border-box;
+}
+.container_flex {
+    @media all and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.container_email {
+    @media all and (min-width: 1200px) {
+        flex-grow: 2;
+        margin-right: 44px;
+    }
 }
 .message_form {
     padding: 15px; 
@@ -40,9 +71,15 @@
     color: white;
     text-transform: uppercase;
     font-weight: bolder;
+    @media all and (min-width: 768px) {
+        width: 206px;
+    }
 }
 .container_button {
     width: 100%;
     text-align: center;
     margin: 20px 0 60px 0;
+    @media all and (min-width: 768px) {
+        text-align: right;
+    }
 }
