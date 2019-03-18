@@ -1,0 +1,48 @@
+.image_form {
+    background-image: url("../images/hero_contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.container_contact {
+    margin: 10px;
+}
+.label {
+    display: block;
+    margin-top: 13px;
+}
+.container_form {
+    text-align: left;
+    padding: 0 15px;
+}
+.text_container {
+    margin-bottom: 50px;
+}
+.input_form {
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    border: 1px solid #b8b8b9;
+    box-sizing: border-box;
+}
+.message_form {
+    padding: 15px; 
+    border: 1px solid #b8b8b9;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button {
+    width: 100%;
+    background: #099d8d;
+    border-radius: 4px;
+    height: 45px;
+    border-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.container_button {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 60px 0;
+}
