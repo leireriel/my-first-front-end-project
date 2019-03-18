@@ -34,6 +34,7 @@
         background-color: #099d8d;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         padding-right: 40%; }   
     @media (min-width: 1200px) {
         background-color: #099d8d;
@@ -55,12 +56,6 @@
     list-style: none;
     justify-content: space-between;
     font-size: 15px;
-
-    @media all and (min-width: 768px) { 
-        justify-content: flex-start;
-        padding-left: 1%;
-        padding-right: 1%;}
-    @media (min-width: 1200px) {padding-left: 1%;}
 }
 
 .item1 {
@@ -90,7 +85,7 @@ a {
     text-decoration: none;
 }
 
-.header_frontmafia {
+.header_name {
 
     @media all and (min-width: 768px) {
         font-weight: bold;

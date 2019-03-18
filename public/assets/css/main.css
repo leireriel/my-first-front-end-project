@@ -462,6 +462,9 @@ a {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-right: 40%;
   }
 
@@ -471,19 +474,11 @@ a {
     justify-content: flex-start;
   }
 
-  .header_navbar_item {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-
   .item3 {
     margin-right: 30px;
   }
 
-  .header_frontmafia {
+  .header_name {
     font-weight: bold;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -594,6 +589,9 @@ a {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-right: 40%;
   }
 
@@ -603,19 +601,11 @@ a {
     justify-content: flex-start;
   }
 
-  .header_navbar_item {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-
   .item3 {
     margin-right: 30px;
   }
 
-  .header_frontmafia {
+  .header_name {
     font-weight: bold;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -661,15 +651,11 @@ a {
     padding-right: 40%;
   }
 
-  .header_navbar_item {
-    padding-left: 1%;
-  }
-
   .item3 {
     margin-right: 30px;
   }
 
-  .header_frontmafia {
+  .header_name {
     font-weight: bold;
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -732,15 +718,11 @@ a {
     padding-right: 40%;
   }
 
-  .header_navbar_item {
-    padding-left: 1%;
-  }
-
   .item3 {
     margin-right: 30px;
   }
 
-  .header_frontmafia {
+  .header_name {
     font-weight: bold;
     -ms-flex-item-align: start;
     align-self: flex-start;
