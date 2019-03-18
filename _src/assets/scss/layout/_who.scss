@@ -1,11 +1,19 @@
 .main_who {
     color: #14d9c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .who_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
  }
 
  .main_who_person {
     display: flex;
     flex-direction: column;
-    padding: 25px;
     align-content: space-between;
 
     @media all and (min-width: 768px) {
@@ -29,6 +37,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    margin: 55px;
 
     @media all and (min-width: 768px) {
       margin: 0;
@@ -37,10 +46,9 @@
 
  .main_who_photo {
     border-radius: 4px;
-    width: 60%;
+    width: 100%;
     border: solid rgba(0, 0, 0, 0.08) 5px;
-    max-width: 220px;
-
+    
     @media all and (min-width: 768px) {
       box-sizing: border-box;
       width: 220px;
@@ -49,11 +57,13 @@
 
  .main_who_text {
     display: flex;
-    width: 100%;
+    margin: 0 15px;
     flex-direction: column;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 24px;
     color: #54585a;
+    font-family: open sans;
 
     @media all and (min-width: 768px) {
       text-align: right;
@@ -61,6 +71,7 @@
    }
    @media (min-width: 1200px) {
       margin: 10px 60px 0 140px;
+      font-size: 16px;
     }
  }
  
@@ -125,3 +136,13 @@
     font-size: 20px;
  }
 
+.grid0 {
+   
+}
+.grid1 {
+   
+
+}
+.grid2 {
+
+}
