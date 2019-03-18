@@ -22,7 +22,6 @@
 
     @media all and (min-width: 768px) {display: none;}
     @media (min-width: 1200px) { display: none;}
-
 }
 
 .header_navbar {
@@ -34,9 +33,8 @@
     @media all and (min-width: 768px) {
         background-color: #099d8d;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 40%; }
+        justify-content: flex-end;
+        padding-right: 40%; }   
     @media (min-width: 1200px) {
         background-color: #099d8d;
         display: flex;
@@ -46,17 +44,44 @@
 
 .header_navbar-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-left: 0;
 
+    @media all and (min-width: 768px) { 
+        justify-content: flex-start;}
 }
 
 .header_navbar_item {
     list-style: none;
+    justify-content: space-between;
+    font-size: 15px;
 
     @media all and (min-width: 768px) { 
+        justify-content: flex-start;
         padding-left: 1%;
         padding-right: 1%;}
     @media (min-width: 1200px) {padding-left: 1%;}
+}
+
+.item1 {
+    width: 56px;
+    height: 30px;
+    padding-right: 15px;
+}
+
+.item2 {
+    width: 121px;
+    height: 30px;
+    padding-right: 15px;
+}
+
+.item3 {
+    width: 80px;
+    height: 30px;
+    @media all and (min-width: 768px) { 
+        margin-right: 30px;}
+    @media (min-width: 1200px) {
+        margin-right: 30px;}   
 }
 
 a {
@@ -65,15 +90,14 @@ a {
     text-decoration: none;
 }
 
-.header_navbar_name {
-
-    @media (min-width: 320px) and (max-width: 767px){
-        display: none;}
+.header_frontmafia {
 
     @media all and (min-width: 768px) {
         font-weight: bold;
-        justify-content: flex-start;}
+        justify-content: flex-start;
+    }
     @media (min-width: 1200px) {
         font-weight: bold;
-        align-self: flex-start;}
+        align-self: flex-start;
+    }
 }
