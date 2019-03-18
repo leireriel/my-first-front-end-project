@@ -1,11 +1,10 @@
 body {
-    font-family: 'Rubik', sans-serif;
     text-align: center;
     margin: 0;
 }
 
 //Core
-
+@import 'core/variables';
 
 //Layout
 @import 'layout/header';
