@@ -3,18 +3,18 @@
 <section class="container_contact">
     <div class="text_container">
         <h2 class="main_team_title">contacto</h2>
-        <p class="text_form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat laboriosam, ullam asperiores tempora fugiat aliquam odio? Eius, aliquid numquam suscipit aperiam libero doloribus error aliquam ab culpa unde. Culpa!</p>
-        <small class="text_form2">Todos los campos marcados con * son obligatorios.</small>
+        <p class="text_form">Si quieres contactar con nosotras para cualquier cosa puedes hacerlo por aquí. Estaremos encantadas de recibir cualquier duda, pregunta o sugerencia.<br>¡No dudes en escribirnos!</p>
+        <small class="text_form2">Todos los campos marcados con <span class="required_item">*</span> son obligatorios.</small>
     </div>
     <form class="container_form" action="#" method="post">
         <div class="container_name">
-            <label for="name" class="label">Nombre completo *</label>
-            <input class="input_form" type="text" name="name" id="name" placeholder="Nombre...">
+            <label for="name" class="label">Nombre completo <span class="required_item">*</span></label>
+            <input class="input_form" type="text" name="name" id="name" placeholder="Nombre..." required>
         </div>
         <div class="container_flex">
             <div class="container_email">
-                <label for="email" class="label">Email *</label>
-                <input class="input_form" type="email" id="email" name="email" value="nombre.apellidos@mail.com">
+                <label for="email" class="label">Email <span class="required_item">*</span></label>
+                <input class="input_form" type="email" id="email" name="email" value="nombre.apellidos@mail.com" required>
             </div>
             <div class="container_phone">
                 <label for="phone" class="label">Teléfono</label>
@@ -22,8 +22,8 @@
             </div>
         </div>
         <div class="container_message">
-            <label for="message" class="label">Mensaje *</label>
-            <textarea class="message_form" name="message" id="message" cols="50" rows="10" placeholder="¿Qué necesitas?"></textarea>
+            <label for="message" class="label">Mensaje <span class="required_item">*</span></label>
+            <textarea class="message_form" name="message" id="message" cols="50" rows="10" placeholder="¿Qué necesitas?" required></textarea>
         </div>
         <div class="container_button">
             <input class="button" type="submit" value="Enviar">
