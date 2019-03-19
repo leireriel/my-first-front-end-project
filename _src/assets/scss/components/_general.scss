@@ -1,0 +1,9 @@
+body {margin: 0;}
+h2,h3 {font-family: $fontTitle;}
+p {
+    font-family: $fontText;
+    line-height: $mainLineHeight;
+    text-align: center;
+    color: $fontColor;
+}
+a {text-decoration: none;}

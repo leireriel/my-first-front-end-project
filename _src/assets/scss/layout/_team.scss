@@ -1,4 +1,4 @@
-aside {
+.sw_container {
     background-color: rgba(184, 184, 185, 0.2);
     text-align: center;
     padding: 30px 15px;
@@ -18,14 +18,10 @@ aside {
     }
 }
 
-h2 , h3 {
-    font-family: $fontTitle;
-}
-
 .main_team_title {
     color: $secondaryColor;
     text-transform: uppercase;
-    @media all and (min-width: 768px) {color: $primaryColor }
+    @media all and (min-width: 768px) {color: $primaryColor;}
 }
 
 .main_team_sw_title {
@@ -48,13 +44,6 @@ h2 , h3 {
 }
 .sw_2 { @media all and (min-width: 768px) { margin-left: 15px;}
     @media (min-width: 1200px) {margin-left: 30px;}
-}
-
-p {
-    font-family: $fontText;
-    line-height: $mainLineHeight;
-    text-align: center;
-    color: $fontColor;
 }
 
 .main_team {
