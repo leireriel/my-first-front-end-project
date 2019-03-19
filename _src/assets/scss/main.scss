@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-}
-
 //Core
 @import 'core/variables';
 
@@ -11,6 +7,10 @@ body {
 @import 'layout/team';
 @import 'layout/who';
 @import 'layout/footer';
+
+
+//Components
+@import 'components/general';
 
 //Pages
 @import 'pages/cv_template';
