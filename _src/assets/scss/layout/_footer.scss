@@ -1,29 +1,21 @@
 .footer {
     margin: 0 auto;
-    border-top: 1px solid #b8b8b9;
-    font-size: 14px;
+    border-top: 1px solid  $lightgrey;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 90px 90px;
-
-    @media all and (min-width: 768px) {
-        display: grid;
+    grid-template-rows: 70px 100px 120px;
+    @media (min-width: 768px) and (max-width: 1024px){
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 0px;}
+        grid-template-rows: 30px 100px;
+        padding: 24px $paddingMedium;}
 }
 
-.footer_copyright {
-    padding-top: 30px;
-
+.footer_copyright_text {
+    padding: 20px 0;
+    color: $lightgrey;
+    font-size: $footerText;
     @media all and (min-width: 768px) {
-        color: #b8b8b9;
-        margin-left: 45px;
-        
         padding: 0;
-        padding-top: 10px;
-        width: 172px;
-        height: 20px;
         text-align: left;
         grid-column: span 1;
         grid-row: span 1;
@@ -32,36 +24,41 @@
 
 .footer_navbar {
     margin-bottom:30px;
-    color: grey;
-
     @media all and (min-width: 768px) {
-        width: 324px;
-        height: 90px;
         grid-column: span 1;
         grid-row: span 2;
         margin: 0;
-        text-align: right;
-        line-height: 2.15;}
+        text-align: right;}
 }
 
 .footer_navbar_list {
-    padding: 0px;
+    text-align: center;
+    @media all and (min-width: 768px) {text-align: right; 
+    margin-block-start: 0;}
 }
 
-.footer_navbar_item {
-    list-style: none;
-}
-
-.footer_logo {
-    width: 115.9px;
-    margin-bottom: 45px;
-    justify-content: center;
-
+.footer_link {color: $fontColor;
+    font-family: $fontText;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px; 
     @media all and (min-width: 768px) {
-        margin-left: 45px;
+        line-height: 30px;
+        color: $lightgrey;
+    }
+}
+
+.footer_logo_container {display: flex;
+    justify-content: center;
+    @media all and (min-width: 768px) {
+        justify-content: flex-start;}
+    }
+.footer_logo {
+    width: 116px;
+    margin-bottom: 45px;
+    @media all and (min-width: 768px) {
         width: 115.9px;
-        margin-bottom: 45px;
         grid-column: span 2;
         grid-row: span 2;
-        text-align: left;}
+        margin-bottom: 0;}
 }
