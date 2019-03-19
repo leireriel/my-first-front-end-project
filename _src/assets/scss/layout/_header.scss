@@ -13,7 +13,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 2;
 
     @media all and (min-width: 768px) {
         width: 100vw;
@@ -35,6 +35,7 @@ a {
     @media all and (min-width: 768px) {
         justify-content: flex-start;
         padding-left: 45px; 
+        opacity: 0.9;
     }
     @media all and (min-width: 1200px) {
         padding-left: 140px;
