@@ -4,6 +4,12 @@
     justify-content: center;
     font-family: $fontText;
     padding: $paddingMin;
+    @media all and (min-width: 768px) {
+      padding: $paddingMedium;
+    }
+    @media all and (min-width: 1200px) {
+      padding: $paddingLarge;
+    }
  }
  .main_who_title {
     font-family: $fontTitle;
@@ -11,6 +17,10 @@
     color: $primaryColor;
     text-transform: uppercase;
     margin: 30px 0;
+    text-align: center;
+    @media all and (min-width: 768px) {
+       margin: 45px 0 41px 0;
+    } 
  }
 
  .who_list {
@@ -22,7 +32,12 @@
     color: $colorNameTitle;
     font-size: $sizeNameTitle;
     margin-top: 15px ;
-    
+    @media all and (min-width: 768px) {
+       margin: 0;
+    }
+    @media all and (min-width: 1200px) {
+      margin-bottom: 5px;
+   }
  }
 
 
@@ -34,14 +49,13 @@
     @media all and (min-width: 768px) {
       flex-direction: row;
       align-items: flex-start;
-      padding: 25px 50px;
+      align-content: space-between;
     }
     @media (min-width: 1200px) {
-      padding: 25px 140px;
    }
  }
 
-.main_who_person:nth-child(odd) {
+.main_who_person:nth-child(even) {
    @media all and (min-width: 768px) {
    flex-direction: row-reverse;
   }
@@ -53,20 +67,26 @@
     align-items: center;
     
     @media all and (min-width: 768px) {
-      margin: 0;
+      margin: 0 38.5px 0;
+    }
+    @media all and (min-width: 1200px) {
+      margin: 0 45px 0;
     }
  }
-
  .main_who_photo {
     border-radius: 4px;
     width: 100%;
     border: solid rgba(0, 0, 0, 0.08) 5px;
-    max-width: 180px;
+    width: 180px;
     
     @media all and (min-width: 768px) {
       box-sizing: border-box;
-      width: 220px;
+      width: 205px;
       }
+   @media all and (min-width: 1200px) {
+      width: 278px;
+   }
+   
  }
 
  .main_who_text {
@@ -81,22 +101,15 @@
 
     @media all and (min-width: 768px) {
       text-align: right;
-      margin: 10px 60px 0 0;
+      margin: 10px 0 0 60px;
    }
-   @media (min-width: 1200px) {
-      margin: 10px 60px 0 140px;
-      font-size: 16px;
-    }
  }
  
 .main_who_text_odd {
    @media all and (min-width: 768px) {
       text-align: left;
-      margin: 10px 0 0 60px;
+      margin: 10px 60px 0 0;
    }
-   @media (min-width: 1200px) {
-      margin: 10px 140px 0 60px;
-  }
 }
 
  .main_who_description, .main_who_social {
@@ -115,6 +128,9 @@
   color: $fontColor;
   font-size: $sizeText;
   margin-block-start: 0;
+  @media all and (min-width: 1200px) {
+     width: 440px;
+  }
   }
  
  .main_who_social_list {
@@ -143,7 +159,7 @@
   margin: 0 11px;
 }
 
-.fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
+.icon, .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
     color: $primaryColor;
     font-size: 20px;
  }
