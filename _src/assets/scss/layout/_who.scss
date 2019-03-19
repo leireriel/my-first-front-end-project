@@ -11,6 +11,7 @@
     color: $primaryColor;
     text-transform: uppercase;
     margin: 30px 0;
+    text-align: center;
  }
 
  .who_list {
@@ -143,7 +144,7 @@
   margin: 0 11px;
 }
 
-.fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
+.icon, .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
     color: $primaryColor;
     font-size: 20px;
  }
