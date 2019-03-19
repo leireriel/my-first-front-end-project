@@ -12,6 +12,9 @@
     text-transform: uppercase;
     margin: 30px 0;
     text-align: center;
+    @media all and (min-width: 768px) {
+       margin: 45px 0 41px 0;
+    } 
  }
 
  .who_list {
@@ -23,6 +26,9 @@
     color: $colorNameTitle;
     font-size: $sizeNameTitle;
     margin-top: 15px ;
+    @media all and (min-width: 768px) {
+       margin: 0;
+    }
     
  }
 
@@ -35,14 +41,14 @@
     @media all and (min-width: 768px) {
       flex-direction: row;
       align-items: flex-start;
-      padding: 25px 50px;
+      align-content: space-between;
     }
     @media (min-width: 1200px) {
       padding: 25px 140px;
    }
  }
 
-.main_who_person:nth-child(odd) {
+.main_who_person:nth-child(even) {
    @media all and (min-width: 768px) {
    flex-direction: row-reverse;
   }
@@ -54,7 +60,8 @@
     align-items: center;
     
     @media all and (min-width: 768px) {
-      margin: 0;
+      margin: 0 38.5px 0;
+      width: 205px;
     }
  }
 
@@ -82,7 +89,7 @@
 
     @media all and (min-width: 768px) {
       text-align: right;
-      margin: 10px 60px 0 0;
+      margin: 10px 0 0 60px;
    }
    @media (min-width: 1200px) {
       margin: 10px 60px 0 140px;
@@ -93,7 +100,7 @@
 .main_who_text_odd {
    @media all and (min-width: 768px) {
       text-align: left;
-      margin: 10px 0 0 60px;
+      margin: 10px 60px 0 0;
    }
    @media (min-width: 1200px) {
       margin: 10px 140px 0 60px;
