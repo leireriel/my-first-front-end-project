@@ -1,8 +1,16 @@
 .main_who {
-    color: #14d9c4;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: $fontText;
+    padding: $paddingMin;
+ }
+ .main_who_title {
+    font-family: $fontTitle;
+    font-size: $sizeMainTitle;
+    color: $primaryColor;
+    text-transform: uppercase;
+    margin: 30px 0;
  }
 
  .who_list {
@@ -10,6 +18,13 @@
     margin: 0;
     padding: 0;
  }
+ .main_who_name {
+    color: $colorNameTitle;
+    font-size: $sizeNameTitle;
+    margin-top: 15px ;
+    
+ }
+
 
  .main_who_person {
     display: flex;
@@ -36,9 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin: 55px;
-
+    
     @media all and (min-width: 768px) {
       margin: 0;
     }
@@ -48,6 +61,7 @@
     border-radius: 4px;
     width: 100%;
     border: solid rgba(0, 0, 0, 0.08) 5px;
+    max-width: 180px;
     
     @media all and (min-width: 768px) {
       box-sizing: border-box;
@@ -85,25 +99,23 @@
   }
 }
 
- .main_who_name_container, .main_who_description, .main_who_social {
+ .main_who_description, .main_who_social {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    color: #099d8d;
+    color: $primaryColor;
  }
 
- .main_who_description {
-    margin: 20px 0;
- }
 
  .main_who_social {
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
  }
 
- .main_who_name, .main_who_description_text {
-    display: inline;
-    margin: 0;
- }
+ .main_who_description_text {
+  color: $fontColor;
+  font-size: $sizeText;
+  margin-block-start: 0;
+  }
  
  .main_who_social_list {
     list-style: none;
@@ -132,17 +144,7 @@
 }
 
 .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
-    color: #099d8d;
+    color: $primaryColor;
     font-size: 20px;
  }
 
-.grid0 {
-   
-}
-.grid1 {
-   
-
-}
-.grid2 {
-
-}
