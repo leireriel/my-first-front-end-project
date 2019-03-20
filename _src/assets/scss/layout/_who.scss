@@ -54,6 +54,9 @@
       align-items: flex-start;
       align-content: space-between;
    }
+   @media all and (min-width: 1200px) {
+      margin-bottom: 40px;
+   }
 }
 
 .main_who_person:nth-child(even) {
@@ -85,7 +88,6 @@
    @media all and (min-width: 1200px) {
       width: 278px;
   }
-   
 }
 
 .main_who_text {
@@ -126,11 +128,20 @@
   color: $fontColor;
   font-size: $sizeText;
   margin-bottom: 10px;
-  @media all and (min-width: 1200px) {
-      width: 440px;
-  }
+}
+
+.main_who_description {
+   @media all and (min-width: 1200px) {
+      padding: 0 0 0 170px;
+   }
 }
  
+.main_who_description_odd {
+   @media all and (min-width: 1200px) {
+      padding: 0 170px 0 0;
+   }
+}
+
 .main_who_social_list {
    list-style: none;
    margin: 0;
@@ -166,5 +177,46 @@
    top: 30px;
    @media all and (min-width: 768px) {
       top: 0px;
+   }
+}
+
+.grid0 {
+   @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-column: 205px, 496px;
+   }
+}
+
+.grid1 {
+   @media all and (min-width: 768px) {
+      grid-column: 1;
+   }
+}
+
+.grid2 {
+   @media all and (min-width: 768px) {
+      grid-column: 2;
+   }
+}
+
+.grid0_odd {
+   @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-column: 496px, 205px;
+      grid-template-row: 1;
+   }
+}
+
+.grid1_odd {
+   @media all and (min-width: 768px) {
+      grid-column: 2;
+      grid-row: 1;
+   }
+}
+
+.grid2_odd {
+   @media all and (min-width: 768px) {
+      grid-column: 1;
+      grid-row: 1;
    }
 }
