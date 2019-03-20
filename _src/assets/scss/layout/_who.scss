@@ -124,7 +124,7 @@
 .main_who_description_text {
   color: $fontColor;
   font-size: $sizeText;
-  margin-block-start: 0;
+  margin-bottom: 10px;
   @media all and (min-width: 1200px) {
       width: 440px;
   }
