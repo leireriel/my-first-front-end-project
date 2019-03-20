@@ -16,8 +16,12 @@
         margin-bottom: 7px;
     }
 }
-
-.text_form2 {color: $fontColor;}
+.small_text {
+    margin-top: 30px;
+}
+.text_form2 {
+    color: $fontColor;
+}
 .required_item {color: $primaryColor;}
 .button {font-family: $fontText;}
 
@@ -34,6 +38,8 @@
 }
 .text_container {
     padding-bottom: 58px;
+    text-align: center;
+
     @media all and (min-width: 768px) {
         width: 442px;
         margin: 0 auto;
