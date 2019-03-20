@@ -6,6 +6,7 @@
     padding: $paddingMin;
     @media all and (min-width: 768px) {
       padding: $paddingMedium;
+      margin-bottom: 50px;
     }
     @media all and (min-width: 1200px) {
       padding: $paddingLarge;

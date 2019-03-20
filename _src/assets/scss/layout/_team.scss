@@ -20,8 +20,11 @@
 
 .main_team_title {
     color: $secondaryColor;
+    font-size: $sizeMainTitle;
     text-transform: uppercase;
-    @media all and (min-width: 768px) {color: $primaryColor;}
+    @media all and (min-width: 768px) {
+        color: $primaryColor;
+    }
 }
 
 .main_team_sw_title {
