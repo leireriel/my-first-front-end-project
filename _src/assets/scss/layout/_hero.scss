@@ -8,9 +8,15 @@
     background-image: url('../../../assets/images/grupal.jpg');
     background-size: cover;
     background-position: center 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+   
 
     @media all and (min-width: 768px) {
         background-position: center -80px;
+        align-items: flex-start;
     }
     @media all and (min-width: 1200px) {
         width: 100%;
@@ -20,29 +26,24 @@
  }
 
  .main_hero_claim { 
+    margin: $paddingMin;
     box-sizing: border-box;
     padding: 15px;
-    transform: scale(0.9);
-    margin: 0 auto;
+    transform: translateY(50%);
     background-color: white; 
-    margin-top: -40px;
-    display: flex;
-    align-items: center;
+  
+  
 
     /*PENDIENTE DE REVISIÓN CON CARLOS*/
 
     @media all and (min-width: 768px) {
         padding: 15px 30px;
         opacity: 0.8;
-        height: 80px;
-        width: 441px;
-        margin: -75px 0 0 30px;
+        transform: translateY(0);
+        margin: 0 46px;
     }
     @media all and (min-width: 1200px) {
-        height: 90px;
-        width: 574px;
-        margin: -85px 0 0 30px;
-   
+        margin: $paddingLarge;
     }
 }
 

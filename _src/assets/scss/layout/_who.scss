@@ -7,8 +7,9 @@
    @media all and (min-width: 768px) {
       padding: $paddingMedium;
       margin-bottom: 50px;
-   }
-   @media all and (min-width: 1200px) {
+      padding-top: 0;
+    }
+    @media all and (min-width: 1200px) {
       padding: $paddingLarge;
       margin-bottom: 50px;
    }
