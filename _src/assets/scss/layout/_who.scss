@@ -164,4 +164,7 @@
 .wrapper {
    position: relative;
    top: 30px;
+   @media all and (min-width: 768px) {
+      top: 0px;
+   }
 }
