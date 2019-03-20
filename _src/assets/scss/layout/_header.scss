@@ -17,7 +17,7 @@
 .header_name {
     width: 100vw;
     height: 60px;
-    background-color: #099d8d; 
+    background-color: $primaryColor; 
     opacity: 0.95;  
     display:flex;
     justify-content: center;
@@ -26,7 +26,7 @@
 
     @media all and (min-width: 768px) {
         justify-content: flex-start;
-        padding-left: 45px; 
+        padding-left: $paddingMedium; 
         opacity: 0.9;
     }
     @media all and (min-width: 1200px) {
@@ -37,30 +37,30 @@
 .header_frontmafia {
     margin: 0;
     font-weight: bold;
-    font-size: 16px;
+    font-size: $sizeText;
 }
 
 .header_link {
-    color: white;
+    color: $whiteColor;
     font-family: $fontTitle;
 }
 
 .header_navbar {
     width: 100vw;
     height: 60px;
-    background-color: #14d9c4;
+    background-color: $secondaryColor;
     opacity: 0.9;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: $sizeNavbar;
 
     @media all and (min-width: 768px) {
-        background-color: #099d8d;
+        background-color: $primaryColor;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 45px;
+        padding-right: $paddingMedium;
         }   
     @media all and (min-width: 1200px) {
         padding-right: 140px;
