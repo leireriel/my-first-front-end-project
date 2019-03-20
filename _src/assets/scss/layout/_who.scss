@@ -24,6 +24,7 @@
    text-align: center;
    @media all and (min-width: 768px) {
       margin: 45px 0 41px 0;
+      padding-top: 20px;
    } 
 }
 
@@ -124,7 +125,7 @@
 .main_who_description_text {
   color: $fontColor;
   font-size: $sizeText;
-  margin-block-start: 0;
+  margin-bottom: 10px;
   @media all and (min-width: 1200px) {
       width: 440px;
   }
