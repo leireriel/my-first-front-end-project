@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Rubik|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    </head>
+    
+    <body>
+        <!--<header class="page__header">@@label</header>-->
+        <header class="header">
+            <div class="header_container">
+                <div class="header_name">
+                     <h1 class="header_frontmafia"><a class="header_link" href="/"> Front | Mafia</a></h1>
+
+                </div>
+                <!-- Menú superior de navegación -->
+                <nav class="header_navbar">
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar_item"><a class="header_link" href="index.html#team">EQUIPO</a>
+
+                        </li>
+                        <li class="header_navbar_item"><a class="header_link" href="index.html#who">QUIENES SOMOS</a>
+
+                        </li>
+                        <li class="header_navbar_item"><a class="header_link" href="contact_form.html">CONTACTO</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="image_form"></section>
+        <section class="container_contact">
+            <div class="text_container">
+                 <h2 class="main_team_title">contacto</h2>
+
+                <p class="text_form">Si quieres contactar con nosotras para cualquier cosa puedes hacerlo por
+                    aquí. Estaremos encantadas de recibir cualquier duda, pregunta o sugerencia.
+                    <br>¡No dudes en escribirnos!</p>
+                <p class="small_text"><small class="text_form2">Todos los campos marcados con <span class="required_item">*</span> son obligatorios.</small>
+
+                </p>
+            </div>
+            <form class="container_form" action="https://formspree.io/marta.sobrino.web@gmail.com"
+            method="POST" />
+            <div class="container_name">
+                <label for="name" class="label">Nombre completo <span class="required_item">*</span>
+
+                </label>
+                <input class="input_form" type="text" name="name" id="name" placeholder="Nombre..."
+                required>
+            </div>
+            <div class="container_flex">
+                <div class="container_email">
+                    <label for="email" class="label">Email <span class="required_item">*</span>
+
+                    </label>
+                    <input class="input_form" type="email" id="email" name="email" value="nombre.apellidos@mail.com"
+                    required>
+                </div>
+                <div class="container_phone">
+                    <label for="phone" class="label">Teléfono</label>
+                    <input class="input_form" type="tel" id="phone" name="phone"
+                    placeholder="Ej: 123456789">
+                </div>
+            </div>
+            <div class="container_message">
+                <label for="message" class="label">Mensaje <span class="required_item">*</span>
+
+                </label>
+                <textarea class="message_form" name="message" id="message" cols="50" rows="10"
+                placeholder="¿Qué necesitas?" required></textarea>
+            </div>
+            <div class="container_button">
+                <input class="button" type="submit" value="Enviar">
+            </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright_text">Front | Mafia © 2019</p>
+            </div>
+            <nav class="footer_navbar">
+                <ul class="footer_navbar_list">
+                    <li class="footer_navbar_item"><a class="footer_link" href="#team">EQUIPO</a>
+
+                    </li>
+                    <li class="footer_navbar_item"><a class="footer_link" href="#who">QUIENES SOMOS</a>
+
+                    </li>
+                    <li class="footer_navbar_item"><a class="footer_link" href="#">CONTACTO</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer_logo_container">
+                <img class="footer_logo" src="assets/images/logo-adalab.svg">
+            </div>
+        </footer>
+    </body>
+
+</html>
