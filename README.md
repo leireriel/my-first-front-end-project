@@ -1,7 +1,8 @@
-# f-m1-front-mafia
+Front|Mafia
+=======
+This is a web page about one of Adalab's goup from Fairfax class. It shows group and individual information about each one making focus on their strenghts.
 
-Front|Mafia es una página web grupal, del grupo1 de la promoción Fairfax de Adalab, que muestra información sobre cada una de las componentes del equipo.
+The main focus of this project is to show the entire group like an able front-end developers.
 
-El objetivo principal es dar a conocer al equipo Front|Mafia como un grupo de desarrolladoras front-end competente y preparado para incorporarse al mercado laboral.
-
+In addition, the main goal is to introduce them to the job market so it has a contact form to get in touch with Front|Mafia group.
 
