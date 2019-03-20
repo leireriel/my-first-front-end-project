@@ -4,10 +4,14 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 100px 120px;
-    @media (min-width: 768px) and (max-width: 1024px){
+    @media all and(min-width: 768px){
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 30px 100px;
         padding: 24px $paddingMedium;}
+    @media all and(min-width: 1024px) {
+        padding: $paddingLarge;
+        padding-top: 20px;
+    }
 }
 
 .footer_copyright_text {
