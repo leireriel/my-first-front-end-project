@@ -11,6 +11,7 @@ The whole web site has been developed by the group, and is their first project a
 We have used:
 * HTML and Sass
 * Mediaqueries and other responsive design techniques so that the web adapts to the screen size of different devices
+* Accessibility labels
 * Git and GitHub Pages to control project versions
 
 The web has two pages:
