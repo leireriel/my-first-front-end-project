@@ -9,11 +9,12 @@ In addition, the main goal is to introduce them to the job market so it has a co
 The whole web site has been developed by the group, and is their first project as team together. We hope you can enjoy it! :)
 
 We have used:
-* HTML and Sass
+* HTML and CSS (Scss)
 * Mediaqueries and other responsive design techniques so that the web adapts to the screen size of different devices
 * Accessibility labels
+* Gulp as a task automation tool
 * Git and GitHub Pages to control project versions
 
 The web has two pages:
 * A home page (Home) with the main information about the team
-* A contact page with a form so they can get in touch with you (you can also contact us by LinkedIn!)
+* A contact page with a form so you can get in touch with us (you can also contact us by LinkedIn!)
