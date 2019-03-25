@@ -188,7 +188,7 @@
 .grid0 {
    @media all and (min-width: 768px) {
       display: grid;
-      grid-template-column: 205px, 496px;
+      grid-template-columns: 205px, 496px;
    }
 }
 
@@ -207,8 +207,8 @@
 .grid0_odd {
    @media all and (min-width: 768px) {
       display: grid;
-      grid-template-column: 496px, 205px;
-      grid-template-row: 1;
+      grid-template-columns: 496px, 205px;
+      grid-template-rows: 1;
    }
 }
 

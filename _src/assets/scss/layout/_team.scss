@@ -18,7 +18,6 @@
     }
 }
 
-.main_team_sw_text , .main_team_text {font-size: $sizeText;}
 .main_team_title {
     color: $secondaryColor;
     font-size: $sizeMainTitle;
@@ -43,8 +42,12 @@
 }
 
 .sw_1 {
-    @media all and (min-width: 768px) {margin-right: 15px;}
-    @media (min-width: 1200px) {margin-right: 30px;}
+    @media all and (min-width: 768px) {
+        margin-right: 15px;
+    }
+    @media (min-width: 1200px) {
+        margin-right: 30px;
+    }
 }
 .sw_2 { @media all and (min-width: 768px) { margin-left: 15px;}
     @media (min-width: 1200px) {margin-left: 30px;}
@@ -58,9 +61,11 @@
 
 .main_team_description {
     padding: $paddingMin;
-    @media all and (min-width: 768px) {padding: $paddingMedium;
-    max-width: 600px;
-    margin: 0 auto;}
+    @media all and (min-width: 768px) {
+        padding: $paddingMedium;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 .main_team_triangle {
