@@ -167,9 +167,14 @@
    margin: 0 11px;
 }
 
-.icon, .fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
+.icon_list {
    color: $primaryColor;
    font-size: 20px;
+   transition: scale ease 0.5s, color ease 0.5s;
+      &:hover {
+         color: $secondaryColor;
+         transform: scale(1.4);
+      }
 }
 
 .wrapper {

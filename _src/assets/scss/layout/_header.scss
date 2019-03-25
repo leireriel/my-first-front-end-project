@@ -77,8 +77,13 @@
 }
 
 .header_navbar_item {
+    margin: 0 10px;
     list-style: none;
     font-weight: bolder;
+    transition: scale ease 0.8s;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 .header_navbar_item:nth-child(2) {
     padding: 0 15px;
