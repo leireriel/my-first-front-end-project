@@ -1,6 +1,6 @@
 Front|Mafia
 =======
-This is a web page about one of Adalab's group from Fairfax class. It shows group and individual information about each one making focus on their strenghts.
+This is a web site about one of Adalab's group from Fairfax class. It shows group and individual information about each one making focus on their strenghts.
 
 The main focus of this project is to show the entire group like an able front-end developers.
 
